@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+<body>
+
+  <!-- Orqa fon effektlari (rasmsiz CSS panjara va nur) -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
+  <!-- Navigatsiya -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">&lt;<span>MMM</span>&gt;</a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects (8)</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-content reveal">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Available for work and projects
+        </div>
+        <h1>Hi, I'm a <span class="gradient-text">Front-End</span> Web Developer</h1>
+        <p class="hero-desc">
+          I create modern, fast, and responsive websites and interfaces for every screen size. Clean code and thoughtful design are my priorities.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- CSS code terminal instead of an image -->
+      <div class="hero-terminal reveal">
+        <div class="terminal-header">
+          <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">developer.js</span>
+        </div>
+        <div class="terminal-body">
+          <pre><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="prop">name</span>: <span class="str">"Your Name"</span>,
+  <span class="prop">role</span>: <span class="str">"Frontend Web Developer"</span>,
+  <span class="prop">technologies</span>: [
+    <span class="str">"HTML5"</span>, <span class="str">"CSS3 / SCSS"</span>, 
+    <span class="str">"JavaScript"</span>, <span class="str">"Git & GitHub"</span>
+  ],
+  <span class="prop">projectsCount</span>: <span class="num">8</span>,
+  <span class="prop">responsive</span>: <span class="bool">true</span>,
+  <span class="fn">writeCode</span>() {
+    <span class="kw">return</span> <span class="str">"Clean and fast interfaces 🚀"</span>;
+  }
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About and Skills -->
+    <section id="about" class="about container reveal">
+      <div class="section-header">
+        <span class="section-tag">// 01. INTRODUCTION</span>
+        <h2>About Me &amp; Technologies</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text card-glass">
+          <h3>I turn ideas into reality through code</h3>
+          <p>
+            I specialize in building websites that are easy to use, visually engaging, and fast. I enjoy transforming Figma designs into precise, high-quality code and bringing interfaces to life with CSS animations.
+          </p>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Completed Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Responsive Design</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">Clean</span>
+              <span class="stat-label">Semantic Code</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="skills" class="skills-box card-glass">
+          <h3>Core Technologies</h3>
+          <div class="skills-list">
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-html" aria-hidden="true">5</span>
+              <div>
+                <strong>HTML5</strong>
+                <span>Semantic markup</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-css" aria-hidden="true">3</span>
+              <div>
+                <strong>CSS3</strong>
+                <span>Flexbox &amp; Grid</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-sass" aria-hidden="true">S</span>
+              <div>
+                <strong>SASS / SCSS</strong>
+                <span>Modern styling</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-js" aria-hidden="true">JS</span>
+              <div>
+                <strong>JavaScript</strong>
+                <span>ES6+</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-git" aria-hidden="true">&lt;/&gt;</span>
+              <div>
+                <strong>Git &amp; GitHub</strong>
+                <span>Version control</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-responsive" aria-hidden="true">▦</span>
+              <div>
+                <strong>Responsive</strong>
+                <span>Mobile-first design</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-animation" aria-hidden="true">Aa</span>
+              <div>
+                <strong>Animations</strong>
+                <span>CSS transitions</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <span class="skill-icon skill-icon-figma" aria-hidden="true">F</span>
+              <div>
+                <strong>Figma</strong>
+                <span>Design to code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects container">
+      <div class="section-header reveal">
+        <span class="section-tag">// 02. PORTFOLIO</span>
+        <h2>My 8 Projects</h2>
+        <p class="section-sub">Each card is ready for your project name, description, and GitHub or live demo links.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="#" target="_blank" title="GitHub Source">GitHub ↗</a>
+              <a href="#" target="_blank" title="Live Preview">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #1</h3>
+          <p>Add a short description of your first project, such as a modern landing page with an interactive menu.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #2</h3>
+          <p>Add a short description of the project, its purpose, and the problem it solves.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>SCSS</span>
+            <span>CSS Grid</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #3</h3>
+          <p>Add a description highlighting the project's design and standout functionality.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>DOM</span>
+            <span>CSS3</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">04</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #4</h3>
+          <p>A fully responsive web application designed for mobile and desktop screens.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Responsive</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">05</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #5</h3>
+          <p>A project focused on engaging animations and a polished user interface.</p>
+          <div class="tech-tags">
+            <span>SCSS</span>
+            <span>JavaScript</span>
+            <span>Animation</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">06</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #6</h3>
+          <p>A data-driven project or an interactive calculator and game.</p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+            <span>CSS3</span>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">07</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #7</h3>
+          <p>A multi-page website built from a Figma design.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>Flexbox</span>
+            <span>Grid</span>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card reveal">
+          <div class="card-top">
+            <span class="project-num">08</span>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Live Demo ↗</a>
+            </div>
+          </div>
+          <h3>Project Name #8</h3>
+          <p>Add details about your latest and most polished project.</p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>SCSS</span>
+            <span>JS ES6+</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container reveal">
+      <div class="contact-box">
+        <span class="section-tag">// 03. CONTACT</span>
+        <h2>Ready to collaborate?</h2>
+        <p>If you have a project, proposal, or question, send me a message through one of the links below.</p>
+        <div class="contact-links">
+          <a href="https://t.me/username" target="_blank" class="btn btn-primary contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21.7 3.2 18.5 20c-.2 1.1-1 1.4-2.1.9l-5.2-3.8-2.5 2.4c-.3.3-.5.5-1.1.5l.4-5.3 9.7-8.8c.4-.4-.1-.6-.7-.2L6 13.3l-5.1-1.6c-1.1-.3-1.1-1.1.2-1.6L19.8 2.8c.9-.3 1.7.2 1.9.4Z" />
+            </svg>
+            <span>Message on Telegram</span>
+          </a>
+          <a href="https://github.com/username" target="_blank" class="btn btn-outline contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.91-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .08 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.85.09-.66.35-1.12.63-1.38-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.72 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 7.02c.85 0 1.69.12 2.49.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.46.1 2.72.64.72 1.03 1.64 1.03 2.76 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.16 10.16 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+            </svg>
+            <span>GitHub Profile</span>
+          </a>
+          <a href="mailto:email@example.com" class="btn btn-outline contact-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8.3 7.7-6.3H4.3l7.7 6.3Zm0 2.1L4 9.2V17h16V9.2l-8 6.2Z" />
+            </svg>
+            <span>Send Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Web Developer Portfolio. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
